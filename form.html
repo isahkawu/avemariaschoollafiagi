@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> html form </title>
+</head>
+<body>
+<div id="menu"align="middle"> &nbsp;&nbsp;&nbsp;
+<a href="schoolsite.html"> HOME</a>&nbsp;&nbsp;&nbsp;
+<a href="form.html"> CONTACT US</a>&nbsp;&nbsp;&nbsp;
+<a href="about.html"> ABOUT</a>&nbsp;&nbsp;&nbsp;
+<a href="gallery.html"> GALLERY</a>&nbsp;&nbsp;&nbsp;
+<a href="project.html"> PROJECT</a> &nbsp;&nbsp;&nbsp;
+<a href="news.html"> NEWS </a>&nbsp;&nbsp;&nbsp;
+<a href="event.html"> EVENT </a>
+</div>
+<style> body{background-image:url("kg1.jpg"); background-size:half;} </style>
+
+<div id="menu"align="middle">
+<form method="post"action="send_simpleform.php">
+<p><label for="user">Name:</label><br/>
+<input type="text" id="user" name="user"></p>
+<p><label for="message">Message:</label><br/>
+<textarea id="message" name="message" rows="5" cols="40"></textarea></p>
+<button type="submit" name="submit" value="send"> Send Message</button>
+</div>
+</form>
+</body>
+</html>
