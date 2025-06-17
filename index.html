@@ -1,9 +1,108 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .content {
+            width: 90%;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Media queries for different screen sizes */
+        @media (min-width: 768px) { /* For tablets and larger */
+            .container {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .content {
+                width: 60%;
+            }
+
+            .sidebar {
+                width: 30%;
+                background-color: #eee;
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
+<body>
+    <div class="container">
+        <div class="header">
+           
+        </div>
+        <div class="content">
+            
+        </div>
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 My Website</p>
+    </div>
+
+    <script>
+        function adjustLayout() {
+            const screenWidth = window.innerWidth;
+
+            if (screenWidth < 768) {
+                // Adjust layout for smaller screens (e.g., hide sidebar)
+                document.querySelector('.sidebar').style.display = 'none';
+            } else {
+                document.querySelector('.sidebar').style.display = 'block';
+            }
+        }
+
+        // Initial adjustment
+        adjustLayout();
+
+        // Adjust layout on window resize
+        window.addEventListener('resize', adjustLayout);
+    </script>
+
+
+
+
+
+
 <body>
 
 <style> body{background-image:url("ave.jpg"); background-size:;} </style>
