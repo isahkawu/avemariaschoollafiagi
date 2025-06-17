@@ -13,27 +13,27 @@
         }
 
         .container {
-            width: 50%;
+            width: 10%;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
         .header {
-            width: 50%;
+            width: 10%;
             background-color: #f0f0f0;
             padding: 10px;
             text-align: center;
         }
 
         .content {
-            width: 50%;
+            width: 10%;
             padding: 10px;
             text-align: justify;
         }
 
         .footer {
-            width: 50%;
+            width: 10%;
             background-color: #333;
             color: white;
             text-align: center;
@@ -41,18 +41,18 @@
         }
 
         /* Media queries for different screen sizes */
-        @media (min-width: 50px) { /* For tablets and larger */
+        @media (min-width: 30px) { /* For tablets and larger */
             .container {
                 flex-direction: row;
                 justify-content: space-around;
             }
 
             .content {
-                width: 60%;
+                width: 150%;
             }
 
             .sidebar {
-                width: 30%;
+                width: 10%;
                 background-color: #eee;
                 padding: 10px;
             }
@@ -77,7 +77,7 @@
         function adjustLayout() {
             const screenWidth = window.innerWidth;
 
-            if (screenWidth < 100) {
+            if (screenWidth < 50) {
                 // Adjust layout for smaller screens (e.g., hide sidebar)
                 document.querySelector('.sidebar').style.display = 'none';
             } else {
@@ -99,7 +99,7 @@
 
 
 
-<style> body{background-image:url("ave.jpg"); background-size:;} </style>
+<style> body{background-image:url("ave.jpg"); background-size:15;} </style>
 
 <div id="menu"align="middle"> 
 <a href="index.html"> HOME</a>&nbsp;&nbsp;&nbsp;
