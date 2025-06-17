@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website</title>
+    <title>Responsiv</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-size: 16px;
+            font-size: 10px;
             box-sizing: border-box;
         }
 
         .container {
-            width: 100%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
         .header {
-            width: 100%;
+            width: 50%;
             background-color: #f0f0f0;
             padding: 10px;
             text-align: center;
         }
 
         .content {
-            width: 90%;
+            width: 50%;
             padding: 10px;
             text-align: justify;
         }
 
         .footer {
-            width: 100%;
+            width: 50%;
             background-color: #333;
             color: white;
             text-align: center;
@@ -41,7 +41,7 @@
         }
 
         /* Media queries for different screen sizes */
-        @media (min-width: 768px) { /* For tablets and larger */
+        @media (min-width: 50px) { /* For tablets and larger */
             .container {
                 flex-direction: row;
                 justify-content: space-around;
@@ -67,23 +67,17 @@
         <div class="content">
             
         </div>
-        <div class="sidebar">
-            <h2>Sidebar</h2>
-            <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
-            </ul>
-        </div>
+        
     </div>
     <div class="footer">
-        <p>&copy; 2024 My Website</p>
+    
     </div>
 
     <script>
         function adjustLayout() {
             const screenWidth = window.innerWidth;
 
-            if (screenWidth < 768) {
+            if (screenWidth < 100) {
                 // Adjust layout for smaller screens (e.g., hide sidebar)
                 document.querySelector('.sidebar').style.display = 'none';
             } else {
@@ -103,7 +97,7 @@
 
 
 
-<body>
+
 
 <style> body{background-image:url("ave.jpg"); background-size:;} </style>
 
